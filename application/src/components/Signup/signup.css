@@ -1,0 +1,109 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin-top: 6%;
+} 
+.sign-container {
+  display: flex;
+  flex-direction: row;
+  height: 30rem;
+  width: 60rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 0.9rem;
+}
+.sign-left {
+  float: left;
+  min-width: 15.625rem;
+  background: linear-gradient(
+    276.31deg,
+    #ffb800 -25.96%,
+    rgba(235, 176, 18, 0.812722) 12.81%,
+    rgba(255, 193, 7, 0.15) 180.24%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.9rem 0 0 0.9rem;
+}
+.sign-left p {
+  font-size: 1.563rem;
+  font-weight: 500;
+  color: #fff;
+}
+.sign-right {
+  width: 100%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sign-upper {
+  font-weight: 400;
+  h1 {
+    font-family: DM Serif Display;
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.063rem;
+    color: #a0a0a0;
+    padding: 0.313rem 0;
+  }
+}
+.sign-lower .sign-input-container{
+  display: flex;
+  flex-direction: row;
+}
+.sign-inner-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 1.125rem;
+}
+.sign-inner-container label{
+  text-align: left;
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+.sign-inner-container input{
+  width: 17rem;
+  padding: 0.75rem;
+  border: 1px solid #a0a0a0;
+  border-radius: 0.313rem;
+  color: #6E6E6E;
+  font-size: 1.063rem;
+} 
+.sign-right .sign-btn-container .btn {
+  background: linear-gradient(
+    276.31deg,
+    #eeb711 -25.96%,
+    rgba(255, 193, 7, 0.15) 180.24%
+  );
+  border: none;
+  width: 17rem;
+  padding: 0.75rem;
+  color: #fff;
+  border-radius: 0.313rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-top: 0.938rem;
+}
+.sign-log-container {
+  margin-top: 0.938rem;
+  font-size: 0.938rem;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  p {
+    font-weight: 300;
+  }
+  a {
+    text-decoration: none;
+    color: #eeb711;
+    font-weight: 500;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}

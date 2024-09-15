@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 30rem;
+  width: 60rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 0.9rem;
+}
+.left {
+  float: left;
+  min-width: 250px;
+  background: linear-gradient(
+    276.31deg,
+    #ffb800 -25.96%,
+    rgba(235, 176, 18, 0.812722) 12.81%,
+    rgba(255, 193, 7, 0.15) 180.24%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.9rem 0 0 0.9rem;
+}
+.left p {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+.right {
+  width: 100%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.upper {
+  font-weight: 400;
+  h1 {
+    font-family: DM Serif Display;
+    font-size: 40px;
+  }
+  p {
+    font-size: 17px;
+    color: #a0a0a0;
+    padding: 5px 0;
+  }
+}
+.lower {
+  margin-top: 2.8rem;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  font-style: italic;
+  label {
+    font-size: 17px;
+    font-weight: 300;
+    color: #000;
+    text-align: left;
+    font-style: normal;
+  }
+  input {
+    min-height: 2.7rem;
+    min-width: 23rem;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+    margin-top: 0.2rem;
+    padding: 0 0.7rem;
+    font-size: 17px;
+    font-weight: 300;
+    color: #6e6e6e;
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-align: right;
+    margin: 0.5rem 0.2rem;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+.right .btn-container .btn {
+  background: linear-gradient(
+    276.31deg,
+    #eeb711 -25.96%,
+    rgba(255, 193, 7, 0.15) 180.24%
+  );
+  border: none;
+  min-height: 2.7rem;
+  min-width: 23rem;
+  color: #fff;
+  border-radius: 0.25rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+.link-container {
+  margin-top: 1rem;
+  font-size: 0.938rem;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  p {
+    font-weight: 300;
+  }
+  a {
+    text-decoration: none;
+    color: #eeb711;
+    font-weight: 500;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
