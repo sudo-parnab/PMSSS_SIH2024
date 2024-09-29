@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import AICTE from "../Assets/AICTE.png";
-import PMSSS from "../Assets/PMSSS.png";
+import AICTE from "../assets/AICTE.png";
+import PMSSS from "../assets/PMSSS.png";
 import styles from "./UpperNav.module.css";
-import phone from "../Assets/phone.png";
-import mail from "../Assets/mail.png";
+import phone from "../assets/phone.png";
+import mail from "../assets/mail.png";
 
 const upper = () => {
   return (
