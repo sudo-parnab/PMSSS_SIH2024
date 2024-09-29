@@ -2,14 +2,13 @@ body{
   font-family: "Roboto", sans-serif;
 }
 .main-container{
+  margin-top: 6%;
   height: 100vh;
   width: 100vw;
   display: grid;
   place-items: center;
 }
 .profile-container{
-  /* margin-top: 1%; */
-  /* margin-bottom: 20%; */
   height: 35rem;
   width: 65rem;
   display: flex;
@@ -21,7 +20,7 @@ body{
 }
 .profile-left{ 
   height: 100%;
-  min-width: 17rem;
+  min-width: 20rem;
   border-radius: 0.313rem;
   background: linear-gradient(276.31deg, #EFB506 -25.96%, rgba(255, 193, 7, 0.15) 180.24%);
   border-radius: 0.9rem 0 0 0.9rem;  
@@ -29,18 +28,20 @@ body{
   place-items: center;
   padding: 4% 0;
 }
-dashboard .profile-left-upper{
+.profile-left-upper{
   display: grid;
   place-items: center;
-  h1{
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-  p{
-    font-size: 1rem;
-    color: white;
-    padding: 0.313rem 0;
-  }
+  text-align: center;
+}
+.profile-left-upper h1{
+  font-size: 2rem;
+  font-family: DM Serif Display;
+  font-weight: 500;
+}
+.profile-left-upper p{
+  font-size: 1.15rem;
+  color: white;
+  padding: 0.313rem 0;
 }
 .profile-left-middle{
   img{

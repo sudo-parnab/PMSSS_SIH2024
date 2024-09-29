@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  display: flex;
+  overflow-y: hidden;
+  margin-top: 2rem;
+}
+.left {
+  background: linear-gradient(
+    276.31deg,
+    #e6ab15 -25.96%,
+    rgba(255, 193, 7, 0.15) 180.24%
+  );
+  width: 42.5rem;
+  height: 47rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+.leftUpper {
+  display: flex;
+  flex-direction: column;
+}
+.leftUpper h1 {
+  font-family: DM Serif Display;
+  color: #000;
+  font-weight: 400;
+  font-size: 2.25rem;
+  text-align: left;
+}
+.leftUpper p {
+  font-family: sans-serif, "Roboto";
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: #5a5a5a;
+}
+.leftMiddle ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+.leftMiddle ul li {
+  display: flex;
+  margin: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+.leftMiddle ul li img {
+  width: 1.5rem;
+  height: auto;
+  margin-right: 2rem;
+}
+.leftMiddle ul li > div h1,
+p {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.15rem;
+  margin: 0.313rem;
+  text-align: left;
+}
+.leftLower ul {
+  list-style-type: none;
+  display: flex;
+}
+.leftLower ul li {
+  margin: 0 1rem;
+  img {
+    height: 1.5rem;
+    width: auto;
+  }
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 47rem;
+  width: 100%;
+}
+.rightUpper h1 {
+  font-family: DM Serif Display;
+  color: #000;
+  font-weight: 400;
+  font-size: 2.25rem;
+}
+.rightUpper p {
+  font-family: sans-serif, "Roboto";
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: #5a5a5a;
+}
+.rightMiddle ul {
+  list-style-type: none;
+}
+.rightMiddle ul li {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 0;
+}
+.rightMiddle input {
+  height: 3rem;
+  width: 37.5rem;
+  font-size: 1.15rem;
+  border: 1px solid #b5b5b5;
+  border-radius: 0.313rem;
+  padding-left: 0.625rem;
+}
+.rightMiddle ul li label {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+.rightLowerInput textarea {
+  height: 10rem;
+  font-size: 1.15rem;
+  border: 1px solid #b5b5b5;
+  border-radius: 0.313rem;
+  padding: 0.625rem;
+}
+.rightLower button {
+  height: 3rem;
+  width: 37.5rem;
+  background: linear-gradient(
+    276.31deg,
+    #efb506 -25.96%,
+    rgba(255, 193, 7, 0.15) 180.24%
+  );
+  color: #fff;
+  font-size: 1.15rem;
+  border-radius: 0.313rem;
+  border: none;
+}

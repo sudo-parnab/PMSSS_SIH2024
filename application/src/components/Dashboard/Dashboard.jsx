@@ -1,6 +1,6 @@
 import React from "react";
 import "./Dashboard.css";
-import Profile from './Profile.png';
+import Profile from '../Dashboard/Assets/Profile.png';
 
 const Dashboard = () => {
   return (

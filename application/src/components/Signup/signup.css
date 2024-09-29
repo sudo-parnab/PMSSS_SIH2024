@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   margin-top: 6%;
@@ -5,15 +10,15 @@ body {
 .sign-container {
   display: flex;
   flex-direction: row;
-  height: 30rem;
-  width: 60rem;
+  min-height: 30rem;
+  margin: 0 10%;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 0.9rem;
 }
 .sign-left {
   float: left;
-  min-width: 15.625rem;
+  min-width: 250px;
   background: linear-gradient(
     276.31deg,
     #ffb800 -25.96%,
@@ -58,7 +63,7 @@ body {
 .sign-inner-container{
   display: flex;
   flex-direction: column;
-  margin: 0.5em 1.125rem;
+  margin: 0.938rem 1.125rem;
 }
 .sign-inner-container label{
   text-align: left;

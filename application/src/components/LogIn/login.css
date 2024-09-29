@@ -45,6 +45,7 @@
     font-size: 17px;
     color: #a0a0a0;
     padding: 5px 0;
+    text-align: center;
   }
 }
 .lower {
@@ -53,7 +54,7 @@
 .input-container {
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
+  margin: 0.75rem 0;
   font-style: italic;
   label {
     font-size: 17px;
@@ -105,6 +106,7 @@
   font-style: italic;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0.5rem;
   p {
     font-weight: 300;

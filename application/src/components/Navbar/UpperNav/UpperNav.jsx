@@ -1,11 +1,42 @@
-import React from "react";
-import styles from "./NavBar.module.css";
 import { NavLink } from "react-router-dom";
+import AICTE from "../Assets/AICTE.png";
+import PMSSS from "../Assets/PMSSS.png";
+import styles from "./UpperNav.module.css";
+import phone from "../Assets/phone.png";
+import mail from "../Assets/mail.png";
 
-const NavBar = () => {
+const upper = () => {
   return (
-    <header className={styles.header}>
-      <nav>
+    <header>
+      <nav className={styles.navUpper}>
+        <img className={styles.pmsss} src={PMSSS} alt="pmsss-logo" />
+        <img className={styles.aicte} src={AICTE} alt="aicte-logo" />
+      </nav>
+      <nav className={styles.navMiddle}>
+        <div className={styles.left}>
+          <ul>
+            <li>
+              <img src={phone} alt="phone" />
+              <p>+91 1234567890</p>
+            </li>
+            <li>
+              <img src={mail} alt="mail" />
+              <p>pmsss.help@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+        <div className={styles.right}>
+          <ul>
+            <li>
+              <p>Administation Login</p>
+            </li>
+            <li>
+              <p>Institute Login</p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav className={styles.lowerNav}>
         <ul>
           <li>
             <NavLink
@@ -79,13 +110,8 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
-      {/* <section>
-        <NavLink to="/login">
-          <button className={styles.btn}>Log In</button>
-        </NavLink>
-      </section> */}
     </header>
   );
 };
 
-export default NavBar;
+export default upper;

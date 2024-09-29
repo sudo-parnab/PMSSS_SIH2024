@@ -13,10 +13,43 @@ const SignUp = () => {
         repassword: "",
     });
 
+    const navigate = useNavigate();
+
     const handleInput = (e) => {
         const name = e.target.name;
         const value = e.target.value;
         setUser({ ...user, [name]: value });
+    };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log(user);
+        try {
+            const response = await fetch(
+                "http://localhost:3000/person/signup",
+                // "https://pmsss-backend.onrender.com/person/signup",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(user),
+                }
+            );
+            if (response.ok) {
+                setUser({
+                    firstName: "",
+                    lastName: "",
+                    email: "",
+                    phone: "",
+                    password: "",
+                    repassword: "",
+                });
+                navigate("/apply");
+            }
+            console.log(response);
+        } catch (err) {
+            console.log(err);
+        }
     };
 
     return (
@@ -32,7 +65,7 @@ const SignUp = () => {
                 <p>New here? Create your account now.</p>
               </div>
               <div className="sign-lower">
-                <form >
+                <form onSubmit={handleSubmit}>
                   <div className="sign-input-container">
                     <div className="sign-input-left">
                       <div className="sign-inner-container">

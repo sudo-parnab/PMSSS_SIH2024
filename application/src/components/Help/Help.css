@@ -1,0 +1,105 @@
+body {
+  font-family: roboto;
+}
+#helpmain {
+  margin-top: 1%;
+  text-align: center;
+  align-items: center;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 1.2rem;
+  outline: none;
+}
+.searchbar input {
+  width: 34%;
+  height: 80%;
+  border: none;
+  box-shadow: #8c8c8c 0px 0px 10px;
+  border-radius: 6px;
+  padding: 26px;
+  font-size: 1.2rem;
+  outline: none;
+}
+.helpcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.content {
+  max-height: 300px; /* Limiting the height of the FAQ container */
+  overflow-y: auto; /* Making the FAQ scrollable */
+  /* border: 1px solid #ddd; */
+  /* padding: 5px; */
+  border-radius: 8px;
+  max-width: 60%;
+  padding: 0 6%;
+}
+.helpcard {
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+help .details {
+  display: none;
+  max-width: 100%;
+}
+.helpcard summary {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.helpcard p {
+  font-size: 1rem;
+  margin-top: 1%;
+}
+#faq {
+  padding: 0 6%;
+  h1 {
+    align-items: left;
+  }
+}
+/* img{
+    width: 30%;
+    height: 30%;
+} */
+.lasthelp {
+  /* display: flex; */
+  justify-content: center;
+  text-align: center;
+}
+#last {
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 8%;
+}
+.button button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #f2c216;
+  border: 2px solid #f2c216;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: none;
+}

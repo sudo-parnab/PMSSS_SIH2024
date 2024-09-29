@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ApplicationForm.css";
+import { useNavigate } from "react-router-dom";
 
 function Application() {
   const [applicationData, setApplicationData] = useState({
@@ -60,6 +61,8 @@ function Application() {
     Upload_Payment_Receipt: "",
     Upload_Income_Certificate: "",
   });
+
+  const navigate = useNavigate();
 
   const handleInput = (e) => {
     const name = e.target.name;
